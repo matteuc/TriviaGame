@@ -1,0 +1,57 @@
+body {
+    padding: 10px;
+    background-image: radial-gradient(#c3e8fa, #52b7eb);
+    /* min-width: 800px; */
+}
+
+#startButton {
+    display: block;
+    height: 50px;
+    margin: auto;
+}
+
+#mainGame {
+    padding: 30px;
+
+}
+
+#gameDisplay {
+    position: relative;
+    height: 70vh;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50px;
+    display: none;
+}
+
+#gameLogo {
+    width: 50%;
+    max-width: 500px;
+}
+
+#timer {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ffeb3b;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 20px;
+    /* display: none; */
+
+}
+
+#questionPicture {
+    height: 50%;
+    background-color: rgb(231, 230, 230);
+}
+
+#question {}
+
+#questionChoices {}
+
+#questionChoice {}
+
+#questionChoice:hover {}

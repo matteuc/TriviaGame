@@ -1,0 +1,22 @@
+[{
+    "text": "This is my question",
+    "image": "./assets/images/example.jpg",
+    "duration": 60,
+    "choices": [{
+            "text": "This is choice A",
+            "isAnswer": false
+        },
+        {
+            "text": "This is choice B",
+            "isAnswer": false
+        },
+        {
+            "text": "This is choice C",
+            "isAnswer": true
+        },
+        {
+            "text": "This is choice D",
+            "isAnswer": false
+        }
+    ]
+}]
