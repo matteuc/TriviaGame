@@ -1,22 +1,45 @@
 [{
-    "text": "This is my question",
-    "image": "./assets/images/example.jpg",
-    "duration": 60,
-    "choices": [{
-            "text": "This is choice A",
-            "isAnswer": false
-        },
-        {
-            "text": "This is choice B",
-            "isAnswer": false
-        },
-        {
-            "text": "This is choice C",
-            "isAnswer": true
-        },
-        {
-            "text": "This is choice D",
-            "isAnswer": false
-        }
-    ]
-}]
+        "text": "This is my question",
+        "image": "https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/08/brooklyn-nine-nine-tca-CONTENT-2018.jpg",
+        "duration": 60,
+        "choices": [{
+                "text": "This is choice A",
+                "isAnswer": false
+            },
+            {
+                "text": "This is choice B",
+                "isAnswer": false
+            },
+            {
+                "text": "This is choice C",
+                "isAnswer": true
+            },
+            {
+                "text": "This is choice D",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "This is my question 2",
+        "image": "https://www.tabletmag.com/wp-content/files_mf/brooklyn99_102413_820px.jpg",
+        "duration": 30,
+        "choices": [{
+                "text": "This is choice A",
+                "isAnswer": false
+            },
+            {
+                "text": "This is choice B",
+                "isAnswer": true
+            },
+            {
+                "text": "This is choice C",
+                "isAnswer": false
+            },
+            {
+                "text": "This is choice D",
+                "isAnswer": false
+            }
+        ]
+    }
+]
