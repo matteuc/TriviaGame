@@ -27,6 +27,11 @@ body {
     max-width: 500px;
 }
 
+#gameInfo {
+    margin: auto;
+    text-align: center;
+}
+
 #gameLogo {
     width: 50%;
     max-width: 500px;
@@ -57,7 +62,7 @@ body {
 #gameMessage {
     position: absolute;
     top: 15%;
-    left: 33%;
+    left: 31.5%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: inline-block;
@@ -66,10 +71,11 @@ body {
     transform: rotate(-20deg);
     border-radius: 5px;
     padding: 5px 10px;
+    background: rgb(241, 239, 239, 0.7);
 }
 
 #question {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
     width: 100%;

@@ -6,7 +6,7 @@ var time = 0;
 var questions = [];
 var questionIndex = 0;
 
-var correctSounds = ["./assets/sounds/jake-peralta-chills-literal-chills.mp3", "./assets/sounds/brooklyn-99-bingpot.mp3", "./assets/sounds/cowabunga.mp3", "./assets/sounds/hot-damn.mp3", "./assets/sounds/yas-queen", "./assets/sounds/ive-never-been-happier.mp3"];
+var correctSounds = ["./assets/sounds/jake-peralta-chills-literal-chills.mp3", "./assets/sounds/brooklyn-99-bingpot.mp3", "./assets/sounds/cowabunga.mp3", "./assets/sounds/hot-damn.mp3", "./assets/sounds/yas-queen.mp3", "./assets/sounds/ive-never-been-happier.mp3"];
 var incorrectSounds = ["./assets/sounds/holt-incredible-pain.mp3", "./assets/sounds/dirtbag.mp3", "./assets/sounds/everything-is-garbage.mp3", "./assets/sounds/holt-incredible-pain.mp3", "./assets/sounds/is-everything-ok.mp3", "./assets/sounds/painnnn.mp3", "./assets/sounds/terry-jeffords-why.mp3"];
 
 function randomSound(isCorrect) {
@@ -124,7 +124,6 @@ function decrement() {
 
         nextQuestion();
 
-
         // increment number of missed questions counter
         numMissed++;
     }
@@ -152,6 +151,13 @@ function timeConverter(t) {
 
 // Restart game, reset stats
 function newGame() {
+    $("#questionPicture").css({
+        "height": "40%",
+    });
+    $("#timer").show();
+    $("#startButton").hide();
+    $("#restartButton").hide();
+    $(".gameInfoContent").empty();
     numCorrect = 0;
     numIncorrect = 0;
     numMissed = 0;
@@ -161,13 +167,28 @@ function newGame() {
 
 function endGame() {
     //hide question and show end game message
-    setTimeout(function () {
-        $("#gameDisplay").empty();
-    }, 3000);
-    console.log("The game has ended");
+    $(".gameDisplayContent").empty();
+    var gifURL;
+    if (numCorrect / questions.length >= 0.60) {
+        gifURL = "https://media1.giphy.com/media/80KYXCRVLo1ji/source.gif";
+    } else {
+        gifURL = "https://media.giphy.com/media/HPiYO1yAg0adO/giphy.gif";
+    }
 
-    // show game stats
-    // show restart button
+
+    $("#questionPicture").css({
+        "height": "60%",
+        "background-image": `url(${gifURL})`
+    });
+
+    $("#gameInfoTitle").text("Your Results:");
+    $("#gameInfoText").html(
+        `<strong>Correct:</strong> ${numCorrect} <br>
+         <strong>Incorrect:</strong> ${numIncorrect} <br>
+         <strong>Missed:</strong> ${numMissed} <br>`
+    );
+    $("#timer").hide();
+    $("#restartButton").show();
 }
 
 function nextQuestion() {
@@ -178,7 +199,10 @@ function nextQuestion() {
         }, 2500);
 
     } else {
-        endGame();
+        setTimeout(function () {
+            emptyMessage();
+            endGame();
+        }, 2500);
     }
 }
 
@@ -205,11 +229,9 @@ function endQuestion(questionChoice) {
     nextQuestion();
 }
 
-
-
 $(document).ready(function () {
     $(function () {
-        var API = "https://api.myjson.com/bins/n2dxh";
+        var API = "https://api.myjson.com/bins/nxal1";
         //RETRIEVE JSON DATA FROM API
         $.getJSON(API,
             function (q) {
@@ -225,9 +247,9 @@ $(document).ready(function () {
         });
 
         //Hide start button 
-        $("#startButton").css("display", "none");
+        $("#startButton").hide();
         //Show game display
-        $("#gameDisplay").css("display", "block");
+        $("#gameDisplay").show();
         newGame();
     });
 

@@ -1,43 +1,263 @@
 [{
-        "text": "This is my question",
-        "image": "https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/08/brooklyn-nine-nine-tca-CONTENT-2018.jpg",
-        "duration": 60,
+        "text": "Cheddar is the name of whose dog?",
+        "image": "https://media.giphy.com/media/Tnu0tl64KazXq/giphy-facebook_s.jpg",
+        "duration": 10,
         "choices": [{
-                "text": "This is choice A",
-                "isAnswer": false
-            },
-            {
-                "text": "This is choice B",
-                "isAnswer": false
-            },
-            {
-                "text": "This is choice C",
+                "text": "Captain Holt",
                 "isAnswer": true
             },
             {
-                "text": "This is choice D",
+                "text": "Jake",
+                "isAnswer": false
+            },
+            {
+                "text": "Charles",
+                "isAnswer": true
+            },
+            {
+                "text": "Rosa",
                 "isAnswer": false
             }
         ]
     },
     {
-        "text": "This is my question 2",
-        "image": "https://www.tabletmag.com/wp-content/files_mf/brooklyn99_102413_820px.jpg",
-        "duration": 30,
+        "text": "What is Terry's favorite yogurt flavor?",
+        "image": "https://i.redd.it/2p97nfgjk3o11.jpg",
+        "duration": 20,
         "choices": [{
-                "text": "This is choice A",
+                "text": "Peach",
                 "isAnswer": false
             },
             {
-                "text": "This is choice B",
+                "text": "Mango",
                 "isAnswer": true
             },
             {
-                "text": "This is choice C",
+                "text": "Strawberry",
                 "isAnswer": false
             },
             {
-                "text": "This is choice D",
+                "text": "Raspberry",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "When playing 'Never Have I Ever...', what is the one thing Amy has actually done?",
+        "image": "https://media1.giphy.com/media/1X6HqMBOFXKl0bjnOL/source.gif",
+        "duration": 15,
+        "choices": [{
+                "text": "Hooked up with someone in the back of a squad car",
+                "isAnswer": false
+            },
+            {
+                "text": "Changed lanes without signaling",
+                "isAnswer": false
+            },
+            {
+                "text": "Left a movie before the credits finished",
+                "isAnswer": false
+            },
+            {
+                "text": "Had a one night stand with a guy from a band",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "text": "What is the name of Captain Holt's original car?",
+        "image": "https://pics.imcdb.org/2/411bnn_003419_c20.jpg",
+        "duration": 15,
+        "choices": [{
+                "text": "Cheryl",
+                "isAnswer": false
+            },
+            {
+                "text": "Gertrude",
+                "isAnswer": false
+            },
+            {
+                "text": "Gertie",
+                "isAnswer": true
+            },
+            {
+                "text": "Cindy",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "On what holiday does the annual heist take place?",
+        "image": "https://img.cinemablend.com/filter:scale/quill/d/6/5/c/8/2/d65c828c677b31127e0031baed6072e572d6ef4a.jpg?mw=600",
+        "duration": 10,
+        "choices": [{
+                "text": "Halloween",
+                "isAnswer": true
+            },
+            {
+                "text": "Christmas",
+                "isAnswer": false
+            },
+            {
+                "text": "New Years Day",
+                "isAnswer": false
+            },
+            {
+                "text": "Thanksgiving",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "One year, the heist took place on a different day. What day was this?",
+        "image": "https://nancyicurtis.files.wordpress.com/2017/10/461340541-foxs-brooklyn-nine-nine-season-one.jpg?w=1200",
+        "duration": 10,
+        "choices": [{
+                "text": "Cinco de Mayo",
+                "isAnswer": true
+            },
+            {
+                "text": "Easter",
+                "isAnswer": false
+            },
+            {
+                "text": "Thanksgiving",
+                "isAnswer": false
+            },
+            {
+                "text": "Valentine's Day",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "Finish Jake and Rosa's saying: _____ pushups (original)",
+        "image": "https://cheesecake.articleassets.meaww.com/37596/uploads/0945e61c-006a-4e79-ab12-33aa294ea730_800_420.jpeg",
+        "duration": 15,
+        "choices": [{
+                "text": "100",
+                "isAnswer": false
+            },
+            {
+                "text": "500",
+                "isAnswer": false
+            },
+            {
+                "text": "1000",
+                "isAnswer": true
+            },
+            {
+                "text": "2000",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "What food did Boyle and Genevieve bond over?",
+        "image": "https://vignette.wikia.nocookie.net/brooklynnine-nine/images/a/af/BoylesHunch.jpg/revision/latest/scale-to-width-down/2000?cb=20151104172142",
+        "duration": 20,
+        "choices": [{
+                "text": "Crudites",
+                "isAnswer": false
+            },
+            {
+                "text": "Takoyaki",
+                "isAnswer": true
+            },
+            {
+                "text": "Stinky Tofu",
+                "isAnswer": false
+            },
+            {
+                "text": "Prosciutto",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "Where did Holt work when he was undercover in Coral Palms?",
+        "image": "https://i2.wp.com/68.media.tumblr.com/288d9a809d4b9de99de03fe19abb8bb0/tumblr_inline_oecd4806hl1rzl2ff_540.png?resize=540%2C309&ssl=1",
+        "duration": 20,
+        "choices": [{
+                "text": "Fun World",
+                "isAnswer": true
+            },
+            {
+                "text": "ATV Adventures",
+                "isAnswer": false
+            },
+            {
+                "text": "Swamp Depot",
+                "isAnswer": false
+            },
+            {
+                "text": "Golf Galaxy",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "Bill of Nutriboom is known for his neck massages, what is the signature feature?",
+        "image": "https://blackgirlnerds.com/wp-content/uploads/2018/05/Screen-Shot-2018-05-07-at-2.54.13-PM.png",
+        "duration": 20,
+        "choices": [{
+                "text": "Pressure Point Technique",
+                "isAnswer": false
+            },
+            {
+                "text": "Eye Contact",
+                "isAnswer": true
+            },
+            {
+                "text": "Deep Tissue",
+                "isAnswer": false
+            },
+            {
+                "text": "Creepy Compliments",
+                "isAnswer": false
+            }
+        ]
+    },
+    {
+        "text": "What was the hardest chore Rosa had Holt and Terry do when she was in prison?",
+        "image": "https://78.media.tumblr.com/b4ca12e7507b7b13a7ed86612c00f553/tumblr_p5ufnfR3Cs1ttxt2to1_540.gif",
+        "duration": 15,
+        "choices": [{
+                "text": "Riding her motorcycle to keep it from breaking down",
+                "isAnswer": false
+            },
+            {
+                "text": "Breaking up with her two girlfriends",
+                "isAnswer": false
+            },
+            {
+                "text": "Leaving her Nutriboom contract",
+                "isAnswer": false
+            },
+            {
+                "text": "Cancelling her cable plan",
+                "isAnswer": true
+            }
+        ]
+    },
+    {
+        "text": "When Jake hired Bill for Halloween Heist IV, what was Bill's safe word?",
+        "image": "https://m.media-amazon.com/images/M/MV5BMjE4MjU1Mjc2NF5BMl5BanBnXkFtZTgwNTYzNTUzMDI@._V1_.jpg",
+        "duration": 15,
+        "choices": [{
+                "text": "Beets",
+                "isAnswer": false
+            },
+            {
+                "text": "Boom Boom",
+                "isAnswer": false
+            },
+            {
+                "text": "Cabbage",
+                "isAnswer": true
+            },
+            {
+                "text": "Moist",
                 "isAnswer": false
             }
         ]
